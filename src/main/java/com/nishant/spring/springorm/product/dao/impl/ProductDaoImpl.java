@@ -2,7 +2,7 @@ package com.nishant.spring.springorm.product.dao.impl;
 
 import java.util.List;
 
-import javax.transaction.Transactional;
+import org.springframework.transaction.annotation.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.orm.hibernate5.HibernateTemplate;
