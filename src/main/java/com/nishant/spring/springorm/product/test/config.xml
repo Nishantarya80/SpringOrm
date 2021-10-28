@@ -38,7 +38,8 @@
 
 	<bean class="org.springframework.orm.hibernate5.HibernateTemplate"
 		name="hibernateTemplate" p:sessionFactory-ref="sessionFactory" />
-
+	
+	<tx:annotation-driven/>
 	<bean
 		class="org.springframework.orm.hibernate5.HibernateTransactionManager"
 		name="transactionManager" p:sessionFactory-ref="sessionFactory" />
